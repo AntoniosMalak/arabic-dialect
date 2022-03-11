@@ -28,4 +28,4 @@ Because of these conditions we have data with 458197 rows so we worked in these 
 - Collect prepossessing texts in processed_text column in new data include columns (ids, text, dialect, processed_text)
 - Save data as `processed_data.csv`
 
-### [Model Training notebook]()
+### [Model Training notebook](https://github.com/AntoniosMalak/arabic-dialect/blob/main/model_training.ipynb)
