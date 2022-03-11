@@ -21,11 +21,11 @@ Because of these conditions we have data with 458197 rows so we worked in these 
 
 ### 2) [Data pre-processing notebook](https://github.com/AntoniosMalak/arabic-dialect/blob/main/data_pre-processing.ipynb)
 - I worked in the same way as mentioned in [`Aim Technologies blog`](https://aimtechnologies.co/arabic-sentiment-analysis-blog.html?fbclid=IwAR0hlfhCOqd2xpJ3sGUb8yJbN0MzMq4dPPe6swuXwtdbCx1Mrn2I2wei3AM) to prepossessing Arabic texts and add some prepossessing. <br>
-    1 - `Normalizing similar characters` for example: (أ,إ,ا) should all be (ا). <br>
-    2 - `Removing tashkeel` for example (“وَصيَّة”) should be (“وصية”). <br>
-    3 - `Normalizing mentions and links to a standard form` for example: (@vodafone سعر الباقة كام؟) should be (XmentionX سعر الباقة كام؟).<br>
-    4 - `Removing unnecessary or repeated punctuation or characters` for example: (!!! جداااااا) should be (! جدا).<br>
-    5 - `Removing English words and numerical` for example: my name is انطونيوس ملاك 55457 should be (انطونيوس ملاك). <br>
+    - `Normalizing similar characters` for example: (أ,إ,ا) should all be (ا). <br>
+    - `Removing tashkeel` for example (“وَصيَّة”) should be (“وصية”). <br>
+    - `Normalizing mentions and links to a standard form` for example: (@vodafone سعر الباقة كام؟) should be (XmentionX سعر الباقة كام؟).<br>
+    - `Removing unnecessary or repeated punctuation or characters` for example: (!!! جداااااا) should be (! جدا).<br>
+    - `Removing English words and numerical` for example: my name is انطونيوس ملاك 55457 should be (انطونيوس ملاك). <br>
 - Collect prepossessing texts in processed_text column in new data include columns (ids, text, dialect, processed_text)
 - Save data as `processed_data.csv`
 
