@@ -42,4 +42,10 @@ Here we built classification models and Deep learning model.
   - Built model with 4 layers Embedding, SpatialDropout1D, LSTM, Dense and used epochs = 5, batch_size = 64
 - At last, Save models, tokenizer and tfidf to use it in develop section.
 
-### 4) [Deployment script](https://github.com/AntoniosMalak/arabic-dialect/blob/main/model_training.ipynb)
+### 4) [Deployment script](https://github.com/AntoniosMalak/arabic-dialect/tree/main/Deploy)
+- Built web page to write texts and predict it.
+- Built `Arabic dialect.py` using flask.
+
+![Arabic dialect](https://user-images.githubusercontent.com/57007944/157964986-b2720d86-2ca0-4b6d-9499-034cedb590ce.jpg)
+
+
