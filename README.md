@@ -3,8 +3,7 @@
 ________________________
 I have data that include 2 columns (ids and dialect) and [API](https://recruitment.aimtechnologies.co/ai-tasks) to downlaod texts from it.
 I worked in four steps we will see it.<br>
-[This is data I mention it in readme](https://drive.google.com/file/d/1ugiOzVbdwGnR0TiRX4DU46TzWfrB_9SL/view?usp=sharing)
-### 1) [Data fetching from API](https://github.com/AntoniosMalak/arabic-dialect/blob/main/data_fetching.ipynb)
+### 1) [Data fetching notebook from API](https://github.com/AntoniosMalak/arabic-dialect/blob/main/data_fetching.ipynb)
 - First condition: The request body must be a JSON as a list of strings, and the size of the list must NOT
 exceed 1000
 - Second condition: The API will return a dictionary where the keys are the ids, and the values are the text, here
@@ -19,3 +18,5 @@ Because of these conditions we have data with 458197 rows so we worked in these 
   - Collect ids and texts into DataFrame.
   - See if we have missing data we don't fetch.
   - Save data as `Data/collected_data.csv`
+
+### [Data pre-processing notebook](https://github.com/AntoniosMalak/arabic-dialect/blob/main/data_fetching.ipynb)
