@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Arabic Dialect API</title>
+    </head>
+    <br><br><br><br><br><br><br>
+    <body bgcolor=#6756gh>
+        <center>
+            <div class="login">
+                <h1>Arabic Dialect</h1>
+
+                <!-- Main Input For Receiving Query to our ML -->
+                <form action="{{ url_for('predict')}}"method="post">
+                    <!--<input type="text" name="text" 
+                    dir="rtl"  placeholder="اكتب النص هنا" required="required" /> -->
+                    <textarea name="text" cols="60" rows="10" 
+                    style="font-size: 18px; text-align: right;"></textarea>
+
+                    <br>
+                    <button type="submit" class="btn btn-primary btn-block btn-large" >Predict</button>
+                </form>
+
+            <br>
+            <br>
+            {{ prediction_text1 }} <br>
+            {{ prediction_text2 }}
+            </div>
+        </center>
+    </body>
+</html>
