@@ -7,7 +7,7 @@ There are 4 steps as mentioned below.<br>
 - First condition: The request body must be a JSON as a list of strings, and the size of the list must NOT
 exceed 1000
 - Second condition: The API will return a dictionary where the keys are the ids, and the values are the text, here
-is a request and response.
+is a request and response.<br>
 Because of these conditions we have data with 458197 rows so we worked in these steps........
   - Collect ids astype string in a list.
   - Split ids into two lists.
