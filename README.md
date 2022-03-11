@@ -1,7 +1,7 @@
 # arabic-dialect
 ## This project to calssify 17 arabic dialect.
 ________________________
-I have `dialect_dataset.csv` that include 2 columns (ids and dialect) and [API](https://recruitment.aimtechnologies.co/ai-tasks) to downlaod texts from it.
+I have `dialect_dataset.csv` that include 2 columns (ids and dialect) and [API](https://recruitment.aimtechnologies.co/ai-tasks) to fetch texts from it.
 There are 4 steps as mentioned below.<br>
 ### 1) [Data fetching notebook from API](https://github.com/AntoniosMalak/arabic-dialect/blob/main/data_fetching.ipynb)
 - First condition: The request body must be a JSON as a list of strings, and the size of the list must NOT
