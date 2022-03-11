@@ -14,3 +14,7 @@ Because of these conditions we have data with 458197 rows so we worked in these 
     - list_1000 => this is a list with length 485 of lists every list on it with length 1000 here we collect (485000).
     - list_197  => this is a single list with length 197.
     at last, we make 2 lists contain all ids.
+  - Make a request for 2 lists to fetch all texts.
+  - Collect ids and texts into DataFrame.
+  - See if we have missing data we don't fetch.
+  - Save data as `Data/collected_data.csv`
