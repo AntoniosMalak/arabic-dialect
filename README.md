@@ -54,3 +54,5 @@ Files I mentioned in lines above you will find it in this [Google Drive](https:/
 It contains 2 folder:
 - `Data` it contains dialect_dataset, collected_data and processed_data.
 - `Models` it contains log_model, DL_model, tfidf and tokinzer.
+
+Thanks for reading :)
