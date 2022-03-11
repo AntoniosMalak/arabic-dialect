@@ -1,7 +1,7 @@
 # arabic-dialect
 ## This project to calssify 17 arabic dialect.
 ________________________
-I have data that include 2 columns (ids and dialect) and [API](https://recruitment.aimtechnologies.co/ai-tasks) to downlaod texts from it.
+I have `collected_data.csv` that include 2 columns (ids and dialect) and [API](https://recruitment.aimtechnologies.co/ai-tasks) to downlaod texts from it.
 I worked in four steps we will see it.<br>
 ### 1) [Data fetching notebook from API](https://github.com/AntoniosMalak/arabic-dialect/blob/main/data_fetching.ipynb)
 - First condition: The request body must be a JSON as a list of strings, and the size of the list must NOT
@@ -19,4 +19,11 @@ Because of these conditions we have data with 458197 rows so we worked in these 
   - See if we have missing data we don't fetch.
   - Save data as `Data/collected_data.csv`
 
-### [Data pre-processing notebook](https://github.com/AntoniosMalak/arabic-dialect/blob/main/data_fetching.ipynb)
+### [Data pre-processing notebook](https://github.com/AntoniosMalak/arabic-dialect/blob/main/data_pre-processing.ipynb)
+- I worked in the same way as mention in [`Aim Technologies blog`](https://aimtechnologies.co/arabic-sentiment-analysis-blog.html?fbclid=IwAR0hlfhCOqd2xpJ3sGUb8yJbN0MzMq4dPPe6swuXwtdbCx1Mrn2I2wei3AM) to prepossing Arabic texts. 
+    1 - `Normalizing similar characters` for example: (أ,إ,ا) should all be (ا).
+    2 - `Removing tashkeel` for example (“وَصيَّة”) should be (“وصية”).
+    3 - `Normalizing mentions and links to a standard form` for example: (@vodafone سعر الباقة كام؟) should be (XmentionX سعر الباقة كام؟).
+    4 - `Removing unnecessary or repeated punctuation or characters` for example: (!!! جداااااا) should be (! جدا).
+- Collect preprocessing texts in processed_text column in data.
+- Save data as `processed_data.csv`
