@@ -25,8 +25,13 @@ Because of these conditions we have data with 458197 rows so we worked in these 
     2 - `Removing tashkeel` for example (“وَصيَّة”) should be (“وصية”). <br>
     3 - `Normalizing mentions and links to a standard form` for example: (@vodafone سعر الباقة كام؟) should be (XmentionX سعر الباقة كام؟).<br>
     4 - `Removing unnecessary or repeated punctuation or characters` for example: (!!! جداااااا) should be (! جدا).<br>
-    5 - `Removing English words and numarical` for example: my name is انطونيوس ملاك 55457 should be (انطونيوس ملاك)
+    5 - `Removing English words and numerical` for example: my name is انطونيوس ملاك 55457 should be (انطونيوس ملاك). <br>
 - Collect prepossessing texts in processed_text column in new data include columns (ids, text, dialect, processed_text)
 - Save data as `processed_data.csv`
 
 ### [Model Training notebook](https://github.com/AntoniosMalak/arabic-dialect/blob/main/model_training.ipynb)
+Here we built classification models and Deep learning model.
+- classification models:
+  - Load data and split it and build methods that can help.
+    - **text_fit_predict_without_imbalanced** method to predict more than techniques with original data.
+    - **text_fit_predict_with_imbalanced** method to predict more than techniques with resample techniques because dialect column are different, the biggest one is EG with 57636 rows and the lowest one is TN with 9246 rows.
