@@ -17,7 +17,7 @@ Because of these conditions we have data with 458197 rows so we worked in these 
   - Make a request for 2 lists to fetch all texts.
   - Collect ids and texts into DataFrame.
   - See if we have missing data we don't fetch.
-  - Save data as `Data/collected_data.csv`
+  - Save data as `collected_data.csv`
 
 ### 2) [Data pre-processing notebook](https://github.com/AntoniosMalak/arabic-dialect/blob/main/data_pre-processing.ipynb)
 - I worked in the same way as mentioned in [`Aim Technologies blog`](https://aimtechnologies.co/arabic-sentiment-analysis-blog.html?fbclid=IwAR0hlfhCOqd2xpJ3sGUb8yJbN0MzMq4dPPe6swuXwtdbCx1Mrn2I2wei3AM) to prepossessing Arabic texts and add some prepossessing. <br>
@@ -49,3 +49,8 @@ Here we built classification models and Deep learning model.
 ![Arabic dialect](https://user-images.githubusercontent.com/57007944/157964986-b2720d86-2ca0-4b6d-9499-034cedb590ce.jpg)
 
 
+### At the end
+Files I mentioned in lines above you will find it in this [Google Drive](https://drive.google.com/file/d/1ugiOzVbdwGnR0TiRX4DU46TzWfrB_9SL/view?usp=sharing).<br>
+It contains 2 folder:
+- `Data` it contains dialect_dataset, collected_data and processed_data.
+- `Models` it contains log_model, DL_model, tfidf and tokinzer.
