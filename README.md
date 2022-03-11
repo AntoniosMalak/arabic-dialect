@@ -26,6 +26,10 @@ Because of these conditions we have data with 458197 rows so we worked in these 
     - `Normalizing mentions and links to a standard form` for example: (@vodafone سعر الباقة كام؟) should be (XmentionX سعر الباقة كام؟).<br>
     - `Removing unnecessary or repeated punctuation or characters` for example: (!!! جداااااا) should be (! جدا).<br>
     - `Removing English words and numerical` for example: my name is انطونيوس ملاك 55457 should be (انطونيوس ملاك). <br>
+    - `Replace new line` and make it in same line.<br>
+    - `Remove first and end space in text` for example: (“   اهلا بيك    ”) should be (“اهلا بيك”).<br>
+    - `Remove punctuation` for example: (“انت بتعمل ايه ؟!.”) should be (“انت بتعمل ايه”).<br>
+
 - Collect prepossessing texts in processed_text column in new data include columns (ids, text, dialect, processed_text)
 - Save data as `processed_data.csv`
 
