@@ -20,7 +20,7 @@ Because of these conditions we have data with 458197 rows so we worked in these 
   - Save data as `collected_data.csv`
 
 ### 2) [Data pre-processing notebook](https://github.com/AntoniosMalak/arabic-dialect/blob/main/data_pre-processing.ipynb)
-- I worked in the same way as mentioned in [`Aim Technologies blog`](https://aimtechnologies.co/arabic-sentiment-analysis-blog.html?fbclid=IwAR0hlfhCOqd2xpJ3sGUb8yJbN0MzMq4dPPe6swuXwtdbCx1Mrn2I2wei3AM) to prepossessing Arabic texts and add some prepossessing. <br>
+- I worked in the same way as mentioned in [`Aim Technologies blog`](https://aimtechnologies.co/arabic-sentiment-analysis-blog.html?fbclid=IwAR0hlfhCOqd2xpJ3sGUb8yJbN0MzMq4dPPe6swuXwtdbCx1Mrn2I2wei3AM) to prepossessing Arabic texts and add my own prepossessing. <br>
     - `Normalizing similar characters` for example: (أ,إ,ا) should all be (ا). <br>
     - `Removing tashkeel` for example (“وَصيَّة”) should be (“وصية”). <br>
     - `Normalizing mentions and links to a standard form` for example: (@vodafone سعر الباقة كام؟) should be (XmentionX سعر الباقة كام؟).<br>
