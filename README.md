@@ -1,5 +1,5 @@
 # arabic-dialect
-## This project to calssify 17 arabic dialect.
+## This project to calssify 18 arabic dialect.
 ________________________
 I have `dialect_dataset.csv` that include 2 columns (ids and dialect) and [API](https://recruitment.aimtechnologies.co/ai-tasks) to fetch texts from it.
 There are 4 steps as mentioned below.<br>
